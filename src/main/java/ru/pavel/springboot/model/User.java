@@ -15,16 +15,16 @@ public class User {
 
     @NotEmpty(message = "The name must not be empty.")
     @Size(min = 2, max = 30, message = "Enter from 2 to 30 characters.")
-    @Column(name = "name")
+    @Column
     private String name;
 
     @NotEmpty(message = "The lastName must not be empty.")
     @Size(min = 2, max = 30, message = "Enter from 2 to 30 characters.")
-    @Column(name = "lastName")
+    @Column
     private String lastName;
 
     @Min(value = 0, message = "Enter a positive number.")
-    @Column(name = "age")
+    @Column
     private int age;
 
     public User(int age, String lastName, String name) {
